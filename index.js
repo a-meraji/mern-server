@@ -8,14 +8,14 @@ const app = express();
 
 app.use(cors());
 
-app.use("/dls", (req, res) => {
-  const sec = req.query.section;
-  const name = req.query.file;
+// app.use("/dls", (req, res) => {
+//   const sec = req.query.section;
+//   const name = req.query.file;
 
-  const address = `./dls/${sec}/${name}`;
+//   const address = `./dls/${sec}/${name}`;
 
-  res.download(path.resolve(address));
-});
+//   res.download(path.resolve(address));
+// });
 
 app.get("/courses/:index", (req, res) => {
   const index = req.params.index;

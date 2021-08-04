@@ -2,7 +2,7 @@ import express from "express";
 import path from "path";
 import cors from "cors";
 import allCourses from "./data.js";
-const PORT = 8080;
+const PORT = 80;
 
 const app = express();
 

@@ -16,6 +16,9 @@ app.use(cors());
 
 //   res.download(path.resolve(address));
 // });
+app.get("/",(req,res)=>{
+  res.send('ok');
+});
 
 app.get("/courses/:index", (req, res) => {
   const index = req.params.index;
